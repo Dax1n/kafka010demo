@@ -21,10 +21,10 @@ public class ProducerTopic {
                     if (e != null) {
                         e.printStackTrace();
                     }
-//                    System.out.println("message send to partition " + metadata.partition() + ", offset: " + metadata.offset());
+                   System.out.println("message send to partition " + metadata.partition() + ", offset: " + metadata.offset());
                 }
             });
-            Thread.sleep(100);
+            Thread.sleep(50);
         }
     }
 }
